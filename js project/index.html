@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="heading">COLOR GAME</h1>
+        <h1 class="heading">rgb(0, 0, 0)</h1>
+        <div class="switch">
+            <button id="hard" class="active">Hard</button>
+            <button id="easy">Easy</button>
+        </div>
+    </header>
+    <section>
+        <h2>Pick the right color</h2>
+        <span class="hide"></span>
+        <div id="container1" class="container">
+            <div class="boxes">
+                <div class="box box-hard"></div>
+                <div class="box box-hard"></div>
+                <div class="box box-hard"></div>
+            </div>
+            <div class="boxes">
+                <div class="box box-hard"></div>
+                <div class="box box-hard"></div>
+                <div class="box box-hard"></div>
+            </div>
+        </div>
+        <div id="container2" class="container hide">
+            <div class="boxes">
+                <div class="box box-easy"></div>
+                <div class="box box-easy"></div>
+                <div class="box box-easy"></div>
+            </div>
+        </div>
+    </section>
+    <div id="right" class="pop">
+        <img src="./images/tick.png" alt="">
+        <h3>IT'S CORRECT</h3>
+        <h3>CONGRATULATIONS</h3>
+        <button id="right-btn">Close</button>
+    </div>
+    <div id="wrong" class="pop" >
+        <img src="./images/wrong.png" alt="">
+        <h3>It's Incorrect</h3>
+        <h3>Don't Worry</h3>
+        <button id="wrong-btn">Try Again</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
